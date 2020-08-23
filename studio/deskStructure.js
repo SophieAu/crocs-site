@@ -1,36 +1,49 @@
-import S from '@sanity/desk-tool/structure-builder'
-import MdSettings from 'react-icons/lib/md/settings'
+import S from "@sanity/desk-tool/structure-builder";
+import { MdSettings, MdEventAvailable, MdDesktopMac } from "react-icons/lib/md";
 
-const hiddenDocTypes = listItem =>
-  !['category', 'person', 'sampleProject', 'siteSettings'].includes(listItem.getId())
+const hiddenDocTypes = defined => listItem => !defined.includes(listItem.getId());
+
+const page = (title, id, icon) =>
+  S.listItem()
+    .title(title)
+    .child(
+      S.editor()
+        .id(id)
+        .schemaType(id)
+        .documentId(id)
+    )
+    .icon(icon || MdDesktopMac);
+
+const pageList = (title, id, icon) =>
+  S.listItem()
+    .title(title)
+    .schemaType(id)
+    .child(S.documentTypeList(id).title(title))
+    .icon(icon);
+
+const definedDocTypes = [
+  "event",
+  "homepage",
+  "membership",
+  "ladies",
+  "men",
+  "about",
+  "siteSettings"
+];
 
 export default () =>
   S.list()
-    .title('Content')
+    .title("Content")
     .items([
-      S.listItem()
-        .title('Settings')
-        .child(
-          S.editor()
-            .id('siteSettings')
-            .schemaType('siteSettings')
-            .documentId('siteSettings')
-        )
-        .icon(MdSettings),
-      S.listItem()
-        .title('Sample projects')
-        .schemaType('sampleProject')
-        .child(S.documentTypeList('sampleProject').title('Sample projects')),
-      S.listItem()
-        .title('People')
-        .schemaType('person')
-        .child(S.documentTypeList('person').title('People')),
-      S.listItem()
-        .title('Categories')
-        .schemaType('category')
-        .child(S.documentTypeList('category').title('Categories')),
+      page("Settings", "siteSettings", MdSettings),
+      page("Homepage", "homepage"),
+      page("About Page", "about"),
+      page("Team Page - Ladies", "ladies"),
+      page("Team Page - Men", "men"),
+      page("Membership Page", "membership"),
+      pageList("Events", "event", MdEventAvailable),
       // This returns an array of all the document types
       // defined in schema.js. We filter out those that we have
       // defined the structure above
-      ...S.documentTypeListItems().filter(hiddenDocTypes)
-    ])
+      ...S.documentTypeListItems().filter(hiddenDocTypes(definedDocTypes))
+    ]);

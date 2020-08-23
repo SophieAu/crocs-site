@@ -1,7 +1,7 @@
 export default {
-  name: "siteSettings",
+  name: "membership",
   type: "document",
-  title: "Website Settings",
+  title: "Membership Page",
   __experimental_actions: [
     // 'create',
     "update",

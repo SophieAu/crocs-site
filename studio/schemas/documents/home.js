@@ -1,7 +1,7 @@
 export default {
-  name: "siteSettings",
+  name: "homepage",
   type: "document",
-  title: "Website Settings",
+  title: "Hompage",
   __experimental_actions: [
     // 'create',
     "update",

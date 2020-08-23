@@ -5,7 +5,7 @@
   },
   "api": {
     "projectId": "nitotqxp",
-    "dataset": "production"
+    "dataset": "prod"
   },
   "plugins": [
     "@sanity/base",

@@ -13,6 +13,12 @@ export default {
       name: "title",
       type: "string",
       title: "Title"
+    },
+    {
+      title: "Cards",
+      name: "content",
+      type: "array",
+      of: [{ type: "card" }]
     }
   ]
 };

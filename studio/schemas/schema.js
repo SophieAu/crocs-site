@@ -12,8 +12,11 @@ import team_men from "./documents/team_men";
 import siteSettings from "./documents/siteSettings";
 
 import mainImage from "./objects/mainImage";
+import section from "./objects/section";
+import card from "./objects/card";
+import body from "./objects/body";
 
-const objectTypes = [mainImage];
+const objectTypes = [body, mainImage, card, section];
 const documentTypes = [about, home, event, membership, team_ladies, team_men, siteSettings];
 
 // Then we give our schema to the builder and provide the result to Sanity

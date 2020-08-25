@@ -17,7 +17,7 @@ export const query = graphql`
         node {
           id
           name
-          description
+          _rawDescription
         }
       }
     }
@@ -49,7 +49,7 @@ const IndexPage = (props) => {
           <>
             <p>{node.id}</p>
             <p>{node.name}</p>
-            <div>{node.description}</div>
+            <div>{JSON.stringify(node._rawDescription)}</div>
           </>
         ))}
       </Container>

@@ -14,6 +14,17 @@ export default {
       type: "string",
       title: "Title"
     },
+    // about section
+
+    // practice section
+
+    // event section
+
+    // membershiip section
+
+    // contact section
+
+    // footer section (ALSO: PAGES FOR FOOTER )
     {
       title: "Sections",
       name: "sections",

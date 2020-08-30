@@ -12,7 +12,7 @@ export default {
     },
     {
       name: "image",
-      type: "mainImage",
+      type: "image",
       title: "Header Image"
     },
     {

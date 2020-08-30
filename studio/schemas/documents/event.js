@@ -15,6 +15,12 @@ export default {
       type: "image",
       title: "Header Image"
     },
+    { title: "Category", name: "category", type: "reference", to: [{ type: "eventCategory" }] },
+    {
+      name: "tag",
+      title: "Tag",
+      type: "string"
+    },
     {
       name: "startTime",
       title: "Date and Time",
@@ -23,24 +29,6 @@ export default {
     {
       name: "location",
       title: "Location",
-      type: "string"
-    },
-    {
-      name: "category",
-      type: "string",
-      title: "Category",
-      require: true,
-      options: {
-        list: [
-          { value: "berlinLeague", title: "Berlin League" },
-          { value: "ladies", title: "Ladies" },
-          { value: "mens", title: "Mens" }
-        ]
-      }
-    },
-    {
-      name: "tag",
-      title: "Tag",
       type: "string"
     },
     {

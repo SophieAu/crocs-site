@@ -28,7 +28,8 @@ const definedDocTypes = [
   "ladies",
   "men",
   "about",
-  "siteSettings"
+  "siteSettings",
+  "eventCategory"
 ];
 
 export default () =>
@@ -36,6 +37,9 @@ export default () =>
     .title("Content")
     .items([
       page("Settings", "siteSettings", MdSettings),
+      pageList("Event Categories", "eventCategory", MdSettings),
+      S.divider(),
+      S.divider(),
       page("Homepage", "homepage"),
       page("About Page", "about"),
       page("Team Page - Ladies", "ladies"),

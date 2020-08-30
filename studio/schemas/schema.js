@@ -10,6 +10,7 @@ import sponsor from "./objects/sponsor";
 
 import about from "./documents/about";
 import event from "./documents/event";
+import eventCategory from "./documents/eventCategory";
 import home from "./documents/home";
 import membership from "./documents/membership";
 import team_ladies from "./documents/team_ladies";
@@ -23,12 +24,14 @@ import h_membership from "./objects/home/membership";
 import h_practice from "./objects/home/practice";
 import h_sponsors from "./objects/home/sponsors";
 
-const objectTypes = [body, card, section, sponsor];
 const homeSections = [h_contact, h_events, h_hero, h_membership, h_practice, h_sponsors];
-const documentTypes = [about, home, event, membership, team_ladies, team_men, siteSettings];
+const objectTypes = [...homeSections, body, card, section, sponsor];
+
+const pages = [about, home, membership, team_ladies, team_men];
+const documentTypes = [...pages, eventCategory, event, siteSettings];
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   name: "berlinCrocs",
-  types: schemaTypes.concat([...objectTypes, ...homeSections, ...documentTypes])
+  types: schemaTypes.concat([...objectTypes, ...documentTypes])
 });

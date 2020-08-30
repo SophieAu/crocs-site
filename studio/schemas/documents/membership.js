@@ -2,17 +2,27 @@ export default {
   name: "membership",
   type: "document",
   title: "Membership Page",
-  __experimental_actions: [
-    // 'create',
-    "update",
-    // 'delete',
-    "publish"
-  ],
+  __experimental_actions: ["update", "publish"],
   fields: [
     {
       name: "title",
       type: "string",
-      title: "Title"
+      title: "Page Title"
+    },
+    {
+      name: "name",
+      type: "string",
+      title: "Card Title"
+    },
+    {
+      name: "image",
+      type: "image",
+      title: "Card Image"
+    },
+    {
+      name: "description",
+      type: "body",
+      title: "Description"
     }
   ]
 };

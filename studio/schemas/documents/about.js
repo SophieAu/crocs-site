@@ -2,12 +2,7 @@ export default {
   name: "about",
   type: "document",
   title: "About Page",
-  __experimental_actions: [
-    // 'create',
-    "update",
-    // 'delete',
-    "publish"
-  ],
+  __experimental_actions: ["update", "publish"],
   fields: [
     {
       name: "title",
@@ -19,6 +14,12 @@ export default {
       name: "content",
       type: "array",
       of: [{ type: "card" }]
+    },
+    {
+      title: "Sections",
+      name: "sections",
+      type: "array",
+      of: [{ type: "section" }]
     }
   ]
 };

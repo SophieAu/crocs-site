@@ -10,18 +10,8 @@ export default {
 
     { title: "Social Media Text", name: "soc_med_text", type: "string" },
     { title: "Twitter", name: "twitter", type: "string", fieldset: "social" },
-    {
-      title: "Instagram",
-      name: "instagram",
-      type: "string",
-      fieldset: "social"
-    },
-    {
-      title: "Facebook",
-      name: "facebook",
-      type: "string",
-      fieldset: "social"
-    },
+    { title: "Instagram", name: "instagram", type: "string", fieldset: "social" },
+    { title: "Facebook", name: "facebook", type: "string", fieldset: "social" },
 
     { title: "Target Email", name: "email", type: "email" }
   ]

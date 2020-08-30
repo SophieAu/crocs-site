@@ -5,11 +5,6 @@ export default {
   options: { collapsible: true },
   fields: [
     { title: "Title", name: "title", type: "string" },
-    {
-      title: "Sponsors",
-      name: "sponsors",
-      type: "array",
-      of: [{ type: "sponsor" }]
-    }
+    { title: "Sponsors", name: "sponsors", type: "array", of: [{ type: "sponsor" }] }
   ]
 };

@@ -5,7 +5,7 @@ export default {
   options: { collapsible: true },
   fields: [
     { title: "Title", name: "title", type: "string" },
-    { title: "Open Street Map URL", name: "subtitle", type: "url" },
+    { title: "Open Street Map URL", name: "osm_url", type: "url" },
     { title: "Text", name: "text", type: "body" }
   ]
 };

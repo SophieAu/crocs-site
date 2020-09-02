@@ -11,7 +11,8 @@ export default {
     { name: "tag", title: "Tag", type: "string" },
     { name: "startTime", title: "Date and Time", type: "datetime" },
     { name: "location", title: "Location", type: "string" },
-    { name: "description", type: "body", title: "Description" }
+    { name: "description", type: "body", title: "Description" },
+    { name: "excerpt", type: "text", title: "Excerpt" }
   ]
 };
 

@@ -7,6 +7,7 @@ export default {
     { name: "title", type: "string", title: "Page Title" },
     { name: "name", type: "string", title: "Card Title" },
     { name: "image", type: "image", title: "Card Image" },
-    { name: "description", type: "body", title: "Description" }
+    { name: "description", type: "body", title: "Description" },
+    { name: "excerpt", type: "text", title: "Excerpt" }
   ]
 };

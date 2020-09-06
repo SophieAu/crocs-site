@@ -4,7 +4,7 @@ export default {
   type: "object",
   options: { collapsible: true },
   fields: [
-    { title: "Title", name: "title", type: "string" },
-    { title: "Sponsors", name: "sponsors", type: "array", of: [{ type: "sponsor" }] }
+    { name: "title", title: "Title", type: "string" },
+    { name: "sponsors", title: "Sponsors", type: "array", of: [{ type: "sponsor" }] }
   ]
 };

@@ -4,9 +4,9 @@ export default {
   type: "object",
   options: { collapsible: true },
   fields: [
-    { title: "Title", name: "title", type: "string" },
-    { title: "Subtitle", name: "subtitle", type: "string" },
-    { title: "Background Image", name: "bgImage", type: "image" },
-    { title: "Intro Text", name: "introText", type: "body" }
+    { name: "title", title: "Title", type: "string" },
+    { name: "subtitle", title: "Subtitle", type: "string" },
+    { name: "bgImage", title: "Background Image", type: "image" },
+    { name: "introText", title: "Intro Text", type: "body" }
   ]
 };

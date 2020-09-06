@@ -4,7 +4,7 @@ export default {
   type: "object",
   options: { collapsible: true },
   fields: [
-    { title: "Title", name: "title", type: "string" },
-    { title: "Membership", name: "membership", type: "reference", to: [{ type: "membership" }] }
+    { name: "title", title: "Title", type: "string" },
+    { name: "membership", title: "Membership", type: "reference", to: [{ type: "membership" }] }
   ]
 };

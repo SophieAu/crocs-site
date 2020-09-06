@@ -3,8 +3,8 @@ export default {
   title: "sponsor",
   type: "object",
   fields: [
-    { title: "Name", name: "name", type: "string" },
-    { title: "Website", name: "website", type: "url" },
-    { title: "Logo", name: "logo", type: "image" }
+    { name: "name", title: "Name", type: "string" },
+    { name: "website", title: "Website", type: "url" },
+    { name: "logo", title: "Logo", type: "image" }
   ]
 };

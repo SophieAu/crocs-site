@@ -4,10 +4,10 @@ export default {
   title: "Membership Page",
   __experimental_actions: ["update", "publish"],
   fields: [
-    { name: "title", type: "string", title: "Page Title" },
-    { name: "name", type: "string", title: "Card Title" },
-    { name: "image", type: "image", title: "Card Image" },
-    { name: "description", type: "body", title: "Description" },
-    { name: "buttonText", type: "string", title: "Button Text" }
+    { name: "title", title: "Page Title", type: "string" },
+    { name: "name", title: "Card Title", type: "string" },
+    { name: "image", title: "Card Image", type: "image" },
+    { name: "description", title: "Description", type: "body" },
+    { name: "buttonText", title: "Button Text", type: "string" }
   ]
 };

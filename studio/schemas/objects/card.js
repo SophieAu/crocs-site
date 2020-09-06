@@ -3,9 +3,9 @@ export default {
   title: "Card",
   type: "object",
   options: { hotspot: true },
-  fields: [{ title: "Content", name: "cardBody", type: "body" }],
+  fields: [{ name: "cardBody", title: "Content", type: "body" }],
   preview: {
-    select: { blocks: "card_body" },
+    select: { blocks: "cardBody" },
     prepare(value) {
       const block = (value.blocks || []).find(block => block._type === "block");
       return {

@@ -5,14 +5,14 @@ export default {
   options: { collapsible: true },
   fieldsets: [{ name: "social", title: "Social Media Handles" }],
   fields: [
-    { title: "Title", name: "title", type: "string" },
-    { title: "Text", name: "text", type: "text" },
+    { name: "title", title: "Title", type: "string" },
+    { name: "text", title: "Text", type: "text" },
 
-    { title: "Social Media Text", name: "socialMediaText", type: "string" },
-    { title: "Twitter", name: "twitter", type: "string", fieldset: "social" },
-    { title: "Instagram", name: "instagram", type: "string", fieldset: "social" },
-    { title: "Facebook", name: "facebook", type: "string", fieldset: "social" },
+    { name: "socialMediaText", title: "Social Media Text", type: "string" },
+    { name: "twitter", title: "Twitter", type: "string", fieldset: "social" },
+    { name: "instagram", title: "Instagram", type: "string", fieldset: "social" },
+    { name: "facebook", title: "Facebook", type: "string", fieldset: "social" },
 
-    { title: "Target Email", name: "email", type: "email" }
+    { name: "email", title: "Target Email", type: "email" }
   ]
 };

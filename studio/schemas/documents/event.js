@@ -5,14 +5,14 @@ export default {
   type: "document",
   title: "Event",
   fields: [
-    { name: "name", type: "string", title: "Event Title" },
-    { name: "image", type: "image", title: "Header Image" },
-    { title: "Category", name: "category", type: "reference", to: [{ type: "eventCategory" }] },
+    { name: "name", title: "Event Title", type: "string" },
+    { name: "image", title: "Header Image", type: "image" },
+    { name: "category", title: "Category", type: "reference", to: [{ type: "eventCategory" }] },
     { name: "tag", title: "Tag", type: "string" },
     { name: "startTime", title: "Date and Time", type: "datetime" },
     { name: "location", title: "Location", type: "string" },
-    { name: "description", type: "body", title: "Description" },
-    { name: "excerpt", type: "text", title: "Excerpt" }
+    { name: "description", title: "Description", type: "body" },
+    { name: "excerpt", title: "Excerpt", type: "text" },
   ]
 };
 

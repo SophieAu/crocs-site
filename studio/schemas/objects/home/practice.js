@@ -4,8 +4,8 @@ export default {
   type: "object",
   options: { collapsible: true },
   fields: [
-    { title: "Title", name: "title", type: "string" },
-    { title: "Open Street Map URL", name: "osmUrl", type: "url" },
-    { title: "Text", name: "text", type: "body" }
+    { name: "title", title: "Title", type: "string" },
+    { name: "osmUrl", title: "Open Street Map URL", type: "url" },
+    { name: "text", title: "Text", type: "body" }
   ]
 };

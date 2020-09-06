@@ -4,7 +4,7 @@ export default {
   type: "object",
   options: { hotspot: true },
   fields: [
-    { title: "Title", name: "title", type: "string" },
-    { title: "Cards", name: "card", type: "array", of: [{ type: "card" }] }
+    { name: "title", title: "Title", type: "string" },
+    { name: "card", title: "Cards", type: "array", of: [{ type: "card" }] }
   ]
 };

@@ -2,5 +2,5 @@ export default {
   name: "eventCategory",
   type: "document",
   title: "Event Category",
-  fields: [{ title: "Category", name: "category", type: "string" }]
+  fields: [{ name: "category", title: "Category", type: "string" }]
 };

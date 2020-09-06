@@ -1,6 +1,6 @@
 export default {
   name: "body",
-  type: "array",
   title: "Body",
+  type: "array",
   of: [{ type: "block" }]
 };

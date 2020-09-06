@@ -9,17 +9,17 @@ export default {
     "publish"
   ],
   fields: [
-    { name: "title", type: "string", title: "Title" },
-    { name: "hero", type: "home_hero", title: "Hero Section" },
-    { name: "practice", type: "home_practice", title: "Practice Section" },
+    { name: "title", title: "Title", type: "string" },
+    { name: "hero", title: "Hero Section", type: "home_hero" },
+    { name: "practice", title: "Practice Section", type: "home_practice" },
     {
       name: "events",
-      type: "home_events",
       title: "Event Section",
+      type: "home_events",
       description: "The 3 next upcoming events will be inserted here automatically"
     },
-    { name: "membership", type: "home_membership", title: "Membership Section" },
-    { name: "contact", type: "home_contact", title: "Contact Section" },
-    { name: "sponsors", type: "home_sponsors", title: "Sponsor Section" }
+    { name: "membership", title: "Membership Section", type: "home_membership" },
+    { name: "contact", title: "Contact Section", type: "home_contact" },
+    { name: "sponsors", title: "Sponsor Section", type: "home_sponsors" }
   ]
 };

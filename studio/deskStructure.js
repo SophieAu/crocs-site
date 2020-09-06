@@ -29,7 +29,8 @@ const definedDocTypes = [
   "men",
   "about",
   "siteSettings",
-  "eventCategory"
+  "eventCategory",
+  "events"
 ];
 
 export default () =>
@@ -45,6 +46,7 @@ export default () =>
       page("Team Page - Ladies", "ladies"),
       page("Team Page - Men", "men"),
       page("Membership Page", "membership"),
+      page("Events Page", "events"),
       pageList("Events", "event", MdEventAvailable),
       // This returns an array of all the document types
       // defined in schema.js. We filter out those that we have

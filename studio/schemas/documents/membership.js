@@ -8,6 +8,6 @@ export default {
     { name: "name", type: "string", title: "Card Title" },
     { name: "image", type: "image", title: "Card Image" },
     { name: "description", type: "body", title: "Description" },
-    { name: "excerpt", type: "text", title: "Excerpt" }
+    { name: "button_text", type: "string", title: "Button Text" }
   ]
 };

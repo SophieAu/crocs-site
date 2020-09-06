@@ -8,7 +8,7 @@ export default {
     { title: "Title", name: "title", type: "string" },
     { title: "Text", name: "text", type: "text" },
 
-    { title: "Social Media Text", name: "soc_med_text", type: "string" },
+    { title: "Social Media Text", name: "socialMediaText", type: "string" },
     { title: "Twitter", name: "twitter", type: "string", fieldset: "social" },
     { title: "Instagram", name: "instagram", type: "string", fieldset: "social" },
     { title: "Facebook", name: "facebook", type: "string", fieldset: "social" },

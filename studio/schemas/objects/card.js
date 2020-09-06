@@ -3,7 +3,7 @@ export default {
   title: "Card",
   type: "object",
   options: { hotspot: true },
-  fields: [{ title: "Content", name: "card_body", type: "body" }],
+  fields: [{ title: "Content", name: "cardBody", type: "body" }],
   preview: {
     select: { blocks: "card_body" },
     prepare(value) {

@@ -5,6 +5,6 @@ export default {
   options: { collapsible: true },
   fields: [
     { title: "Title", name: "title", type: "string" },
-    { title: "Button Text", name: "button_text", type: "string" }
+    { title: "Button Text", name: "buttonText", type: "string" }
   ]
 };

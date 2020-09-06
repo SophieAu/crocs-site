@@ -13,6 +13,7 @@ export default {
     { name: "location", title: "Location", type: "string" },
     { name: "description", title: "Description", type: "body" },
     { name: "excerpt", title: "Excerpt", type: "text" },
+    { name: "buttonText", title: "Button Text", type: "string" }
   ]
 };
 

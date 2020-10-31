@@ -13,26 +13,22 @@ export default {
     { name: "location", title: "Location", type: "string" },
     { name: "description", title: "Description", type: "body" },
     { name: "excerpt", title: "Excerpt", type: "text" },
+    { name: "tickets", title: "Ticket Categories", type: "array", of: [{ type: "categoryAmount" }]  },
     { name: "buttonText", title: "Button Text", type: "string" }
-  ]
-};
-
-/*
+  ],
   preview: {
     select: {
-      title: 'title',
-      publishedAt: 'publishedAt',
-      slug: 'slug',
-      media: 'mainImage'
+      title: 'name',
+      startTime: 'startTime',
+      category: 'category.category',
+      tag: "tag",
     },
-    prepare({title = 'No title', publishedAt, slug = {}, media}) {
-      const dateSegment = format(publishedAt, 'YYYY/MM')
-      const path = `/${dateSegment}/${slug.current}/`
+    prepare({title = 'No title', startTime, category, tag}) {
+      const dateSegment = format(startTime, 'YYYY-MM-DD')
       return {
-        title,
-        media,
-        subtitle: publishedAt ? path : 'Missing publishing date'
+        title: `${dateSegment} ${title}`,
+        subtitle: `${category} – ${tag}`
       }
     }
   }
-  */
+};

@@ -7,6 +7,7 @@ import section from "./objects/section";
 import card from "./objects/card";
 import body from "./objects/body";
 import sponsor from "./objects/sponsor";
+import ticketAmount from "./objects/ticketAmount";
 
 import about from "./documents/about";
 import event from "./documents/event";
@@ -26,7 +27,7 @@ import h_practice from "./objects/home/practice";
 import h_sponsors from "./objects/home/sponsors";
 
 const homeSections = [h_contact, h_events, h_hero, h_membership, h_practice, h_sponsors];
-const objectTypes = [...homeSections, body, card, section, sponsor];
+const objectTypes = [...homeSections, body, card, section, sponsor, ticketAmount];
 
 const pages = [about, home, membership, team_ladies, team_men, events];
 const documentTypes = [...pages, eventCategory, event, siteSettings];

@@ -13,7 +13,7 @@ export default {
     { name: "location", title: "Location", type: "string" },
     { name: "description", title: "Description", type: "body" },
     { name: "excerpt", title: "Excerpt", type: "text" },
-    { name: "tickets", title: "Ticket Categories", type: "array", of: [{ type: "categoryAmount" }]  },
+    { name: "tickets", title: "Ticket Categories", type: "array", of: [{ type: "ticketAmount" }]  },
     { name: "buttonText", title: "Button Text", type: "string" }
   ],
   preview: {

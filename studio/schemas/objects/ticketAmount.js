@@ -1,5 +1,5 @@
 export default {
-  name: "categoryAmount",
+  name: "ticketAmount",
   title: "Ticket with Amount",
   type: "object",
   options: { hotspot: true },

@@ -1,0 +1,21 @@
+:root {
+  --lightGreen: #f9fff6;
+  --darkGreen: #3b7220;
+  --darkerGreen: #182f0d;
+  --gold: #e9bf37;
+  --white: #ffffff;
+  --red: #bf0000;
+
+  /* Brand colors */
+  --brand-primary: var(--gold);
+  --brand-primary--inverted: var(--darkerGreen);
+  --brand-secondary: var(--darkerGreen);
+
+  --main-navigation-color: var(--darkerGreen);
+
+  --backdrop-color: var(--lightGreen);
+}
+
+.Navbar_root {
+  align-items: center;
+}

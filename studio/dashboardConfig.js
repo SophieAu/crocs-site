@@ -41,7 +41,7 @@ const projectInfoWidget = {
 
 const eventsWidget = {
   name: "document-list",
-  options: { title: "Events", order: "_createdAt desc", types: ["events"] },
+  options: { title: "Events", order: "startTime desc", types: ["event"] },
   layout: { width: "medium" },
 };
 

@@ -1,3 +1,5 @@
+import { required } from "../_util";
+
 export default {
   name: "sponsor",
   title: "sponsor",
@@ -5,6 +7,6 @@ export default {
   fields: [
     { name: "name", title: "Name", type: "string" },
     { name: "website", title: "Website", type: "url" },
-    { name: "logo", title: "Logo", type: "image" }
+    { name: "logo", title: "Logo", type: "image", validation: required }
   ]
 };

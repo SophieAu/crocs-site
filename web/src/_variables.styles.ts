@@ -93,6 +93,7 @@ export const sizes = {
   cardPadding: '1.5rem',
   eventPreviewMinWidth: '16rem',
   eventPreviewMaxWidth: '20rem',
+  headerBottomMargin: '2rem',
 };
 
 export const helper = {

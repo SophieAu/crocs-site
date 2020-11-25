@@ -1,13 +1,13 @@
 import { css } from 'linaria';
 
-import { color, font, screenSize } from '../_variables.styles';
+import { color, font, screenSize, sizes } from '../_variables.styles';
 import { withOpacity } from '../util';
 
 export const root = css`
   position: sticky;
   top: 0;
   z-index: 2;
-  margin-bottom: 2rem;
+  margin-bottom: ${sizes.headerBottomMargin};
 
   @media all ${screenSize.mobile} {
     display: none;

@@ -1,6 +1,6 @@
 import { css } from 'linaria';
 
-import { color, font, screenSize } from '../_variables.styles';
+import { color, font, screenSize, sizes } from '../_variables.styles';
 
 export const root = css`
   box-sizing: border-box;
@@ -13,10 +13,10 @@ export const root = css`
   align-items: center;
 
   @media all ${screenSize.desktop} {
-    margin-top: -3rem;
+    margin-top: -${sizes.headerBottomMargin};
   }
   @media all ${screenSize.tablet} {
-    margin-top: -3rem;
+    margin-top: -${sizes.headerBottomMargin};
   }
 
   @media all ${screenSize.mobile} {

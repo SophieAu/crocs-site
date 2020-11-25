@@ -24,7 +24,7 @@ export const buildExcerpt = (content?: SanityBlock[], length = 100) => {
   let excerpt = '';
   let index = 0;
   do {
-    const text = content[index].text || content[index].children[0].text
+    const text = content[index].text || content[index].children[0].text;
     excerpt += ` ${text}`;
     index++;
   } while (excerpt.length < (length || 100) && index < content.length);

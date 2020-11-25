@@ -7,7 +7,7 @@ export const content = css`
 
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-rows: max-content auto;
+  grid-template-rows: auto 1fr;
   grid-gap: 1.5rem;
 
   @media all ${screenSize.tiny} {

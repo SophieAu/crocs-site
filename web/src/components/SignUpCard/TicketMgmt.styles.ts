@@ -6,7 +6,7 @@ import { withOpacity } from '../../util';
 export const inputSection = css`
   border: 1px solid ${color.darkGreen};
   border-radius: 0.25rem;
-  padding: 0.5rem 0 0.5rem;
+  padding: 0.25rem 0 0.5rem;
 
   table {
     border-collapse: collapse;

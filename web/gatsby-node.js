@@ -1,34 +1,14 @@
-async function createProjectPages(graphql, actions) {
-  const { createPage } = actions;
-  const result = await graphql(`
-    {
-      allSanityEvent {
-        edges {
-          node {
-            id
-          }
-        }
-      }
-    }
-  `);
+/* eslint-disable @typescript-eslint/no-var-requires */
+//@ts-check
 
-  if (result.errors) throw result.errors;
-
-  const projectEdges = (result.data.allSanityEvent || {}).edges || [];
-
-  projectEdges.forEach(edge => {
-    const id = edge.node.id;
-    const slug = edge.node.id;
-    const path = `/project/${slug}/`;
-
-    createPage({
-      path,
-      component: require.resolve("./src/templates/project.js"),
-      context: { id }
-    });
-  });
-}
+const { PAGES_QUERY, buildEvents } = require('./meta/node');
 
 exports.createPages = async ({ graphql, actions }) => {
-  await createProjectPages(graphql, actions);
+  const result = await graphql(PAGES_QUERY);
+  if (result.errors) return;
+
+  console.log('\nCreating Event Pages...');
+  buildEvents(result.data.events.nodes, actions.createPage);
+
+  console.log();
 };

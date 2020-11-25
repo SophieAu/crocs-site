@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Time</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Crocs-V2---Scroll" transform="translate(-334.000000, -739.000000)" fill="#182F0D" fill-rule="nonzero">
+            <g id="Events" transform="translate(208.000000, 304.000000)">
+                <g id="Cards" transform="translate(0.000000, 136.000000)">
+                    <g id="Card-v1">
+                        <g id="Time" transform="translate(126.000000, 299.000000)">
+                            <path d="M7,14 C3.13400675,14 4.73447626e-16,10.8659932 0,7 C-4.73447626e-16,3.13400675 3.13400675,7.10171439e-16 7,0 C10.8659932,2.36723813e-16 14,3.13400675 14,7 C14,10.8659932 10.8659932,14 7,14 Z M7,12.6 C10.0927946,12.6 12.6,10.0927946 12.6,7 C12.6,3.9072054 10.0927946,1.4 7,1.4 C3.9072054,1.4 1.4,3.9072054 1.4,7 C1.4,10.0927946 3.9072054,12.6 7,12.6 Z M6.3,7.287 L6.3,2.8 L7.7,2.8 L7.7,6.713 L10.465,9.478 L9.478,10.465 L6.3,7.287 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

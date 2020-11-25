@@ -1,0 +1,11 @@
+{
+  "name": "check-sanity-update",
+  "version": "1.0.0",
+  "scripts": {},
+  "author": "Sophie Au",
+  "license": "MIT",
+  "dependencies": {
+    "google-spreadsheet": "^3.0.13",
+    "isomorphic-fetch": "^3.0.0"
+  }
+}

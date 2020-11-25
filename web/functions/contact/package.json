@@ -1,0 +1,10 @@
+{
+  "name": "contact",
+  "version": "1.0.0",
+  "scripts": {},
+  "author": "Sophie Au",
+  "license": "MIT",
+  "dependencies": {
+    "sendmail": "1.6.1"
+  }
+}

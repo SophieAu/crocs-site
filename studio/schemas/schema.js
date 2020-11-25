@@ -6,7 +6,6 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import about from './documents/about';
 import event from './documents/event';
 import eventCategory from './documents/eventCategory';
-import events from './documents/events';
 import home from './documents/home';
 import membership from './documents/membership';
 import siteSettings from './documents/siteSettings';
@@ -27,7 +26,7 @@ import ticketAmount from './objects/ticketAmount';
 const homeSections = [h_contact, h_events, h_hero, h_membership, h_practice, h_sponsors];
 const objectTypes = [...homeSections, body, card, section, sponsor, ticketAmount];
 
-const pages = [about, home, membership, team_ladies, team_men, events];
+const pages = [about, home, membership, team_ladies, team_men];
 const documentTypes = [...pages, eventCategory, event, siteSettings];
 
 // Then we give our schema to the builder and provide the result to Sanity

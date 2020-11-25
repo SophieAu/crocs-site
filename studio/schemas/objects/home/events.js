@@ -14,6 +14,7 @@ export default {
       description: 'What to display if there are no upcoming events',
       validation: required,
     },
-    { name: 'buttonText', title: 'More Button Text', type: 'string' },
+    { name: 'moreButtonText', title: 'More Button Text', type: 'string', validation: required },
+    { name: 'signupButtonText', title: 'Signup Button Text', type: 'string', validation: required },
   ],
 };

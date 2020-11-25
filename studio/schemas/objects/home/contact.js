@@ -14,7 +14,5 @@ export default {
     { name: 'twitter', title: 'Twitter', type: 'string', fieldset: 'social' },
     { name: 'instagram', title: 'Instagram', type: 'string', fieldset: 'social' },
     { name: 'facebook', title: 'Facebook', type: 'string', fieldset: 'social' },
-
-    { name: 'email', title: 'Target Email', type: 'email' },
   ],
 };

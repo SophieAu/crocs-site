@@ -9,5 +9,6 @@ export default {
     { name: 'title', title: 'Site Title', type: 'string', validation: required },
     { name: 'copyrightHolder', title: 'Official Club Name', type: 'string', validation: required },
     { name: 'footerText', title: 'Footer Text', type: 'string' },
+    { name: 'contactEmail', title: 'Contact Email', type: 'string', validation: required },
   ],
 };

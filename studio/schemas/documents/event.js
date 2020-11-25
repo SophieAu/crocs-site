@@ -22,7 +22,6 @@ export default {
     { name: 'description', title: 'Description', type: 'body', validation: required },
     { name: 'excerpt', title: 'Excerpt', type: 'text', validation: required },
     { name: 'tickets', title: 'Ticket Categories', type: 'array', of: [{ type: 'ticketAmount' }] },
-    { name: 'buttonText', title: 'Button Text', type: 'string' },
   ],
 
   preview: {

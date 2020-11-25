@@ -17,6 +17,6 @@ export default {
       validation: required,
     },
     { name: 'description', title: 'Description', type: 'body', validation: required },
-    { name: 'buttonText', title: 'Button Text', type: 'string' },
+    { name: 'buttonText', title: 'Button Text', type: 'string', validation: required },
   ],
 };

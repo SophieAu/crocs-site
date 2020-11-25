@@ -18,5 +18,17 @@ export default {
     },
     { name: 'description', title: 'Description', type: 'body', validation: required },
     { name: 'buttonText', title: 'Button Text', type: 'string', validation: required },
+    {
+      name: 'signupSuccess',
+      title: 'Signup Success Message',
+      type: 'string',
+      validation: required,
+    },
+    {
+      name: 'signupError',
+      title: 'Signup Error Message',
+      type: 'string',
+      validation: required,
+    },
   ],
 };

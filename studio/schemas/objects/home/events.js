@@ -16,5 +16,17 @@ export default {
     },
     { name: 'moreButtonText', title: 'More Button Text', type: 'string', validation: required },
     { name: 'signupButtonText', title: 'Signup Button Text', type: 'string', validation: required },
+    {
+      name: 'signupSuccess',
+      title: 'Signup Success Message',
+      type: 'string',
+      validation: required,
+    },
+    {
+      name: 'signupError',
+      title: 'Signup Error Message',
+      type: 'string',
+      validation: required,
+    },
   ],
 };

@@ -1,6 +1,6 @@
 [build]
-  publish = "public/"
-  functions = "functions"
+  publish = "web/public/"
+  functions = "web/functions"
   ignore = "sh ignore.sh"
   functionsSource = "functions"
 

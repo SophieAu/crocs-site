@@ -1,13 +1,26 @@
 module.exports = {
-  extends: ['standard', 'standard-react', 'plugin:import/errors', 'plugin:import/warnings'],
-  rules: {
-    'react/prop-types': 0,
-    'object-curly-spacing': ['error', 'never']
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'simple-import-sort', 'jsx-a11y'],
+  extends: [
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
+  ],
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
   },
   settings: {
-    react: {
-      pragma: 'React',
-      version: '16.8.4'
-    }
-  }
-}
+    react: { version: 'detect' },
+  },
+  rules: {
+    'react/prop-types': 0,
+    'react/display-name': 0,
+    'simple-import-sort/sort': 2,
+    '@typescript-eslint/explicit-function-return-type': 0,
+    'react/jsx-no-literals': 2,
+    'react/jsx-sort-props': [2, { callbacksLast: true, reservedFirst: true }],
+  },
+};

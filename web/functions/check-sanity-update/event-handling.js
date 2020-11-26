@@ -9,8 +9,7 @@ const fetchEvent = async id =>
   fetchFromSanity(`{ Event(id: "${id}") { _id name startTime tickets { name }} }`);
 
 const validateEventData = ({ _id, name, startTime, tickets }) => {
-  if (!_id || !name || !startTime)
-    return response(422, 'Payload is broken: Missing Fields');
+  if (!_id || !name || !startTime) return response(422, 'Payload is broken: Missing Fields');
 
   if (!!tickets && (isBadArray(tickets) || !tickets[0].name))
     return response(422, 'Payload is broken: Misformed Ticket Categories');

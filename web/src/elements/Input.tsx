@@ -39,32 +39,38 @@ interface Props {
   onChange?: (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
   type?: 'textarea' | 'input';
   className?: string;
+  required?: boolean;
 }
 
-const Input: React.FC<Props> = ({ className, label, nameId, value, onChange, type = 'input' }) => (
-  <div className={cx(rootStyle, className)}>
-    <label className={labelStyle} htmlFor={nameId}>
-      {label}
-    </label>
-    {type === 'input' ? (
-      <input
-        className={inputStyle}
-        id={nameId}
-        name={nameId}
-        type="text"
-        value={value}
-        onChange={onChange}
-      />
-    ) : (
-      <textarea
-        className={inputStyle}
-        id={nameId}
-        name={nameId}
-        value={value}
-        onChange={onChange}
-      />
-    )}
-  </div>
-);
+const Input: React.FC<Props> = props => {
+  const { className, label, nameId, value, onChange, required, type = 'input' } = props;
+
+  return (
+    <div className={cx(rootStyle, className)}>
+      <label className={labelStyle} htmlFor={nameId}>
+        {label}
+      </label>
+      {type === 'input' ? (
+        <input
+          className={inputStyle}
+          id={nameId}
+          name={nameId}
+          required={required}
+          type="text"
+          value={value}
+          onChange={onChange}
+        />
+      ) : (
+        <textarea
+          className={inputStyle}
+          id={nameId}
+          name={nameId}
+          value={value}
+          onChange={onChange}
+        />
+      )}
+    </div>
+  );
+};
 
 export default Input;

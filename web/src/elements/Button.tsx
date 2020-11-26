@@ -20,8 +20,9 @@ const baseStyle = css`
     outline: none;
   }
 
-  &[disabled='true'] {
+  &[disabled] {
     opacity: 0.6;
+    cursor: default;
   }
 `;
 
@@ -40,7 +41,7 @@ const solidStyle = css`
     background: ${withOpacity(color.gold, 80)};
   }
 
-  &[disabled='true'] {
+  &[disabled] {
     background: ${withOpacity(color.gold, 50)};
   }
 `;

@@ -43,6 +43,11 @@ const SignUpCardForm: React.FC<Props> = props => {
 
   const [tickets, updateTickets] = useReducer(reducerFn, initialState(categories));
   const [isSubmitting, setSubmitting] = useState(false);
+  const [isNameValid, setNameValid] = useState(false);
+  const [isEmailValid, setEmailValid] = useState(false);
+  const isTicketsValid =
+    !categories.length || (Object.values(tickets) as string[]).some(v => ![0, '0'].includes(v));
+
   const formId = `${signUpId}-signup`;
 
   const { setBannerState } = useBannerContext();
@@ -77,10 +82,26 @@ const SignUpCardForm: React.FC<Props> = props => {
       nameId={formId}
     >
       {!!categories.length && <TicketMgmt categories={categories} onTicketChange={updateTickets} />}
-      <Input className={styles.textInput} label={strings.form.name} nameId="name" />
-      <Input className={styles.textInput} label={strings.form.email} nameId="email" />
+      <Input
+        className={styles.textInput}
+        label={strings.form.name}
+        nameId="name"
+        required
+        onChange={e => setNameValid(!!e.target.value)}
+      />
+      <Input
+        className={styles.textInput}
+        label={strings.form.email}
+        nameId="email"
+        required
+        onChange={e => setEmailValid(!!e.target.value)}
+      />
       <div className={styles.buttonContainer}>
-        <Button disabled={isSubmitting} type="submit" onClick={handleSubmit}>
+        <Button
+          disabled={!isNameValid || !isEmailValid || !isTicketsValid || isSubmitting}
+          type="submit"
+          onClick={handleSubmit}
+        >
           {buttonText}
         </Button>
       </div>

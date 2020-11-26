@@ -38,7 +38,7 @@ const sanitizeSignupData = data => {
     .replace('%20', ' ')
     .replace(/[`~!@#$%^&*()_|+=?;:'",.<>\{\}\[\]\\\/]/gi, '');
   const email = encodeURI(data.email).replace(/[`~!#$%^&*()|=?;:'",<>\{\}\[\]\\\/]/gi, '');
-  const paid = Boolean(data.paid);
+  const paid = data.paid === true || data.paid === "true";
 
   const rawCategories = Object.keys(data).filter(k => !BASE_FIELDS.includes(k));
   const categories = {};

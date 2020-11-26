@@ -30,9 +30,6 @@ const validateSignupData = data => {
   const keys = Object.keys(data);
   if (BASE_FIELDS.some(f => !keys.includes(f)))
     return response(422, 'Payload is broken: Base Fields Missing');
-
-  if (!keys.some(k => !BASE_FIELDS.includes(k)))
-    return response(422, 'Payload is broken: Missing Categories');
 };
 
 const sanitizeSignupData = data => {

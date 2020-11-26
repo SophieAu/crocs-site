@@ -13,7 +13,7 @@ const netlifyWidget = {
       {
         buildHookId: '5f41658fc86c105b4cdfb007',
         title: 'Portfolio Website',
-        name: 'sanity-gatsby-portfolio-web-vzx4q16o',
+        name: 'eager-clarke-a32b73',
         apiId: '0e5bb56b-7040-4b65-b80b-861d5adc0ea7',
       },
     ],
@@ -27,12 +27,12 @@ const projectInfoWidget = {
     data: [
       {
         title: 'GitHub repo',
-        value: 'https://github.com/SophieAu/sanity-gatsby-portfolio',
+        value: 'https://github.com/SophieAu/crocs-site',
         category: 'Code',
       },
       {
         title: 'Frontend',
-        value: 'https://sanity-gatsby-portfolio-web-vzx4q16o.netlify.app',
+        value: 'https://eager-clarke-a32b73.netlify.app',
         category: 'apps',
       },
     ],

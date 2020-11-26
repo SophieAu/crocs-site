@@ -25,6 +25,7 @@ const imageStyle = css`
 
   min-width: 100%;
   height: 100%;
+  clip-path: polygon(0% 75%, 0% 0%, 100% 0%, 100% 75%, 50% 95%);
 `;
 
 const overlayStyle = css`

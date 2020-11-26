@@ -9,10 +9,10 @@ const fetchEvent = async id =>
   fetchFromSanity(`{ Event(id: "${id}") { _id name startTime tickets { name }} }`);
 
 const validateEventData = ({ _id, name, startTime, tickets }) => {
-  if (!_id || !name || !startTime || !tickets)
+  if (!_id || !name || !startTime)
     return response(422, 'Payload is broken: Missing Fields');
 
-  if (isBadArray(tickets) || !tickets[0].name)
+  if (!!tickets && (isBadArray(tickets) || !tickets[0].name))
     return response(422, 'Payload is broken: Misformed Ticket Categories');
 
   if (isNaN(Date.parse(startTime))) return response(422, 'Payload is broken: Invalid Date');
@@ -43,7 +43,7 @@ const sanitizeEventData = ({ _id, name, startTime, tickets }) => ({
   id: _id.replace(/[^a-zA-Z0-9]/g, ''),
   date: new Date(startTime).toISOString().split('T')[0],
   title: sanitizeString(name),
-  tickets: tickets.map(({ name }) => sanitizeString(name)),
+  tickets: (tickets || []).map(({ name }) => sanitizeString(name)),
 });
 
 const buildEventTitle = ({ id, title, date }) => `${date} ${title} (${id})`;

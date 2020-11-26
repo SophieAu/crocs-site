@@ -76,7 +76,7 @@ const SignUpCardForm: React.FC<Props> = props => {
       hiddenFields={hiddenFields(signUpId.split('-')[0])}
       nameId={formId}
     >
-      <TicketMgmt categories={categories} onTicketChange={updateTickets} />
+      {!!categories.length && <TicketMgmt categories={categories} onTicketChange={updateTickets} />}
       <Input className={styles.textInput} label={strings.form.name} nameId="name" />
       <Input className={styles.textInput} label={strings.form.email} nameId="email" />
       <div className={styles.buttonContainer}>

@@ -31,11 +31,17 @@ export default {
       category: 'category.category',
       tag: 'tag',
     },
-    prepare({ title = 'No title', startTime, category, tag }) {
+    prepare({ title, startTime, category, tag }) {
       const dateSegment = format(startTime, 'YYYY-MM-DD');
+
+      const shownDate = dateSegment === 'Invalid Date' ? 'Date TBD:' : dateSegment;
+      const shownTtitle = !title ? 'Title TBD' : title;
+
+      const shownTag = !!tag ? ` – ${tag}` : '';
+
       return {
-        title: `${dateSegment} ${title}`,
-        subtitle: `${category} – ${tag}`,
+        title: `${shownDate} ${shownTtitle}`,
+        subtitle: `${category}${shownTag}`,
       };
     },
   },

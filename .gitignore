@@ -1,8 +1,19 @@
 # Mac files
 .DS_Store
 
-# Dependency directories
-/node_modules
+# gatsby files
+.cache/
+.linaria-cache/
+public/
+node_modules/
 
 # lerna files
 /lerna-debug.log
+
+# Secrets
+.env.*
+
+# Local Netlify folder
+.netlify
+web/functions/*.zip
+

@@ -2,8 +2,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 //@ts-check
 
-const { sanitizeString } = require('../check-sanity-update/util');
-const { setup, loadDoc, response } = require('./util');
+const { setup, loadDoc, response, sanitizeString } = require('./util');
 
 setup(
   'GOOGLE_SERVICE_ACCOUNT_EMAIL',
@@ -38,7 +37,7 @@ const sanitizeSignupData = data => {
     .replace('%20', ' ')
     .replace(/[`~!@#$%^&*()_|+=?;:'",.<>\{\}\[\]\\\/]/gi, '');
   const email = encodeURI(data.email).replace(/[`~!#$%^&*()|=?;:'",<>\{\}\[\]\\\/]/gi, '');
-  const paid = data.paid === true || data.paid === "true";
+  const paid = data.paid === true || data.paid === 'true';
 
   const rawCategories = Object.keys(data).filter(k => !BASE_FIELDS.includes(k));
   const categories = {};

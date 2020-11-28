@@ -5,8 +5,6 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 require('isomorphic-fetch');
 
-const API_ENDPOINT = `https://${process.env.GATSBY_SANITY_PROJECT_ID}.api.sanity.io/v1/graphql/${process.env.GATSBY_SANITY_DATASET}/default`;
-
 exports.response = (code, message) => ({
   statusCode: code,
   body: !!message ? JSON.stringify({ message }) : undefined,
@@ -19,16 +17,6 @@ exports.response = (code, message) => ({
     'Access-Control-Allow-Credentials': true,
   },
 });
-
-exports.fetchFromSanity = async query => {
-  const response = await fetch(API_ENDPOINT, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query }),
-  });
-
-  return response.json();
-};
 
 exports.setup = (...params) => {
   if (!process.env.NETLIFY) require('dotenv').config();
